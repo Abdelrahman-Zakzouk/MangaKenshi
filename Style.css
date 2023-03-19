@@ -9,6 +9,7 @@ body
   font-size: 20px;
   background-color: #1f2029;
   background-size: 5vw;
+  width: 100%;
   color: white;
   /* overflow-y: scroll; */
   overflow-x: hidden;
