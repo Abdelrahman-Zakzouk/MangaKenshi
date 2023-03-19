@@ -1,0 +1,253 @@
+body 
+{
+  background: url(bg.svg);
+  font-size: 20px;
+  background-color: #1f2029;
+  background-size: 5vw;
+  color: white;
+  /* overflow-y: scroll; */
+  overflow-x: hidden;
+  font-family: 'Tilt Neon', cursive;
+}
+
+html 
+{
+  scroll-behavior: smooth;
+}
+
+.header-content 
+{
+  margin-left: 3vw;
+  margin-right: 3vw;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  height: 6.4vh;
+}
+
+.navburger 
+{
+  margin-right: auto;
+  margin-left: 1vw;
+  margin-top: 4vh;
+  height: 2.3vh;
+  width: 17px;
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  align-items: center;
+}
+
+.navburger-button 
+{
+  position: absolute;
+  top: 3.8vh;
+  width: 2.7vw;
+  height: 4vh;
+  color: transparent;
+  border-color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.nav 
+{
+  position: absolute;
+  top: 13vh;
+  left: -200vw;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12px;
+  border-radius: 2vw;
+  background-color: lavender;
+  width: 98vw;
+  height: 30vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.1fr;
+  transition-property: all;
+  transition-duration: 500ms;
+  z-index: 100;
+  visibility: hidden;
+}
+
+.nav-lnk 
+{
+  color: #8167a9;
+  font-size: 5vw;
+  display: grid;
+  place-items: center;
+}
+.nav-lnk-ttl 
+{
+  font-size: 3vw;
+}
+
+.ion 
+{
+  pointer-events: none;
+}
+
+.bartop
+{
+  position: relative;
+  top: -3vh;
+  margin-right: 1.05vw;
+  left: -0.12px;
+  padding-left: 2px;
+  color: transparent;
+  font-size: 6px;
+  background-color: white;
+  user-select: none;
+  transform-origin: left;
+  width: 1.1vw;
+  height: 0.5vh;
+  border-radius: 40px;
+  z-index: -100;
+  transition-property: all;
+  transition-duration: 500ms;
+  float: left;
+}
+
+.barmid
+{
+  position: relative;
+  top: -2vh;
+  left: 0;
+  padding-left: 2px;
+  color: transparent;
+  font-size: 6px;
+  background-color: white;
+  user-select: none;
+  width: 2.03vw;
+  height: 0.5vh;
+  border-radius: 40px;
+  z-index: -100;
+  transition-property: all;
+  transition-duration: 500ms;
+}
+
+.barbottom
+{
+  position: relative;
+  top: -1.08vh;
+  margin-left: 1.1vw;
+  left: 0;
+  padding-left: 2px;
+  color: transparent;
+  font-size: 6px;
+  background-color: white;
+  user-select: none;
+  transform-origin: right;
+  width: 1vw;
+  height: 0.5vh;
+  border-radius: 40px;
+  z-index: -100;
+  transition-property: all;
+  transition-duration: 500ms;
+  float: right;
+}
+
+.header 
+{
+  margin-top: 3.2vh;
+}
+
+.logo 
+{
+  position: relative;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.logo-lnk
+{
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 1.4vw;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  animation: underline 300ms;
+  user-select: none;
+  place-items: center;
+}
+
+.logo-lnk:hover 
+{
+  animation: ununderline 300ms;
+  animation-fill-mode: forwards;
+}
+
+.logo-lnk span 
+{
+  color: #8167a9;
+}
+
+.author
+{
+  position: relative;
+  padding-left: 25%;
+  font-size: 1vw;
+  font-family: 'Tilt Neon', cursive;
+  animation: underline 300ms;
+}
+.typed::after {
+  content: '';
+  display: inline;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+.author:hover 
+{
+  animation: ununderline 300ms;
+}
+
+/* .page 
+{
+
+} */
+
+.page-content 
+{
+  position: relative;
+  display: inline-block;
+  /* background-color: rebeccapurple; */
+  top: 0;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 20vh;
+}
+
+
+
+@keyframes underline 
+{
+  0%
+  {
+    text-decoration-color: rgba(255, 255, 255, 0);
+  }
+  100%
+  {
+    text-decoration-color: rgba(255, 255, 255, 1);
+  }
+}
+@keyframes ununderline 
+{
+  0%
+  {
+    text-decoration-color: rgba(255, 255, 255, 1);
+  }
+  100%
+  {
+    text-decoration-color: rgba(255, 255, 255, 0);
+  }
+}
