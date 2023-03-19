@@ -17,15 +17,19 @@ function navtoggle()
   if (i === 0)
   {
     var nav = document.getElementById('nav');
+    var pg = document.getElementById('page-content');
     nav.style.visibility="visible";
     nav.style.transform="translateX(201vw)";
+    pg.style.filter="blur(3px)";
     i++;
   }
   else if (i === 1)
   {
     var nav = document.getElementById('nav');
+    var pg = document.getElementById('page-content')
     nav.style.transform="translateX(-200vw)";
     nav.style.visibility="hidden";
+    pg.style.filter="unset";
     i--;
     
   }

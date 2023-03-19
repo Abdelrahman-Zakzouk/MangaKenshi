@@ -1,3 +1,8 @@
+*
+{
+  -webkit-tap-highlight-color: transparent;
+}
+
 body 
 {
   background: url(bg.svg);
@@ -60,21 +65,21 @@ html
   align-items: center;
   padding-top: 12px;
   border-radius: 2vw;
-  background-color: lavender;
+  background:linear-gradient(45deg, #a5a5b6, #e6e6fa);
   width: 98vw;
   height: 30vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 0.1fr;
   transition-property: all;
-  transition-duration: 500ms;
+  transition-duration: 700ms;
   z-index: 100;
   visibility: hidden;
 }
 
 .nav-lnk 
 {
-  color: #8167a9;
+  color: #785f9e;
   font-size: 5vw;
   display: grid;
   place-items: center;
@@ -225,6 +230,8 @@ html
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 20vh;
+  transition-property: all;
+  transition-duration: 700ms;
 }
 
 
@@ -249,5 +256,169 @@ html
   100%
   {
     text-decoration-color: rgba(255, 255, 255, 0);
+  }
+}
+
+/* @media only screen and (max-device-width: 768px) */
+/* {
+  .bartop
+  {
+    position: relative;
+    top: -3vh;
+    margin-right: 1.05vw;
+    left: -0.12px;
+    padding-left: 2px;
+    color: transparent;
+    font-size: 6px;
+    background-color: white;
+    user-select: none;
+    transform-origin: left;
+    width: 55vw;
+    height: 0.5vh;
+    border-radius: 40px;
+    z-index: -100;
+    transition-property: all;
+    transition-duration: 500ms;
+    float: left;
+  }
+
+  .barmid
+  {
+    position: relative;
+    top: -2vh;
+    left: 0;
+    padding-left: 2px;
+    color: transparent;
+    font-size: 6px;
+    background-color: white;
+    user-select: none;
+    width: 2.03vw;
+    height: 0.5vh;
+    border-radius: 40px;
+    z-index: -100;
+    transition-property: all;
+    transition-duration: 500ms;
+  }
+
+  .barbottom
+  {
+    position: relative;
+    top: -1.08vh;
+    margin-left: 1.1vw;
+    left: 0;
+    padding-left: 2px;
+    color: transparent;
+    font-size: 6px;
+    background-color: white;
+    user-select: none;
+    transform-origin: right;
+    width: 1vw;
+    height: 0.5vh;
+    border-radius: 40px;
+    z-index: -100;
+    transition-property: all;
+    transition-duration: 500ms;
+    float: right;
+  }
+} */
+
+@media only screen and (max-device-width: 480px)
+{
+  .menu 
+  {
+    padding-top: 1vh;
+  }
+
+  .bartop
+  {
+    position: relative;
+    top: -3vh;
+    margin-right: 1.05vw;
+    left: -0.12px;
+    padding-left: 2px;
+    color: transparent;
+    font-size: 6px;
+    background-color: white;
+    user-select: none;
+    transform-origin: left;
+    width: 6vw;
+    height: 0.52vh;
+    border-radius: 40px;
+    z-index: -100;
+    transition-property: all;
+    transition-duration: 500ms;
+    float: left;
+  }
+
+  .barmid
+  {
+    position: relative;
+    top: -2vh;
+    left: -0.6vw;
+    padding-left: 2px;
+    color: transparent;
+    font-size: 6px;
+    background-color: white;
+    user-select: none;
+    width: 6vw;
+    height: 0.52vh;
+    border-radius: 40px;
+    z-index: -100;
+    transition-property: all;
+    transition-duration: 500ms;
+  }
+
+  .barbottom
+  {
+    position: relative;
+    top: -1vh;
+    margin-left: 1.1vw;
+    left: -1.2vw;
+    padding-left: 2px;
+    color: transparent;
+    font-size: 6px;
+    background-color: white;
+    user-select: none;
+    transform-origin: right;
+    width: 6vw;
+    height: 0.52vh;
+    border-radius: 40px;
+    z-index: -100;
+    transition-property: all;
+    transition-duration: 500ms;
+    float: right;
+  }
+  .logo 
+  {
+    width: 100vw;
+    margin-right: 20vw;
+    padding-top: 1vh;
+  }
+
+  .logo-lnk 
+  {
+    margin-left: 35vw;
+    font-size: 100%;
+  }
+
+  .author 
+  {
+    margin-left: -5vw;
+    font-size: 70%;
+  }
+
+  .nav 
+  {
+    height: 20vh;
+  }
+
+  .nav-lnk 
+  {
+    font-size: 10vw;
+  }
+
+  .nav-lnk-ttl 
+  {
+    font-size: 5vw;
   }
 }
