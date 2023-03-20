@@ -35,7 +35,7 @@ function navtoggle()
   }
   
 }
-
+// close nav on page click
 function unnavpageclk()
 {
   if (i === 1)
