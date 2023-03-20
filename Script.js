@@ -36,6 +36,20 @@ function navtoggle()
   
 }
 
+function unnavpageclk()
+{
+  if (i === 1)
+  {
+    var nav = document.getElementById('nav');
+    var pg = document.getElementById('page-content')
+    nav.style.transform="translateX(-200vw)";
+    nav.style.visibility="hidden";
+    pg.style.filter="unset";
+    i--;
+  }
+  
+}
+
 function isTouchDevice() {
   return (('ontouchstart' in window) ||
      (navigator.maxTouchPoints > 0) ||
