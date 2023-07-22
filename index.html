@@ -1,134 +1,235 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-	<!-- UTF-8 -->
-	<meta charset='UTF-8'>
-	<!--  -->
-	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-	<!-- Device-screen specs -->
-	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'>
-	<!-- Page Title and img -->
-	<title>MangaKenshi</title>
-  <link rel="icon" href="logo.svg">
-	<!-- Link Styling CSS file -->
-	<link rel='stylesheet' type='text/css' href='Style.css'>
-	<!-- Link Google fonts -->
-	<link rel='preconnect' href='https://fonts.googleapis.com'> 
-	<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
-	<link href='https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap' rel='stylesheet'>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
-	<!-- Link Scripting JS File & Typed Module -->
-	<script src='Script.js'></script>
-	<script src='https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js'></script>
-	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- UTF-8 -->
+  <meta charset='UTF-8'>
+  <!--  -->
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <!-- Device-screen specs -->
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <!-- ################### title and files ################### -->
+  <title>ω〆ƙεɳȿɧɩ ッ</title>
+  <link rel='stylesheet' type='text/css' href='Style.css'>
+  <script src='Script.js'></script>
+  <!-- ################### fonts and modules ################### -->
+  <link rel='preconnect' href='https://fonts.googleapis.com'> 
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+  <link href='https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet">
+  <script src='https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js'></script>
+  <script type='module' src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js'></script>
+  <script nomodule src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'></script>
 </head>
-<body onload='bodyLoad()'>
-	
-	
-	<div class="header">
-    <div class="header-content">
-      <div class="navburger">
-        <button class="navburger-button" id="navburger-button" onclick="navtoggle()" onmouseenter="anim()" onmouseleave="unanim()">E</button>
-        <span class="bartop" id="bartop">e</span>
-        <span class="barmid" id="barmid">e</span>
-        <span class="barbottom" id="barbottom">e</span>
-      </div>
-      <div class="logo" id="logo">
-        <a href="https://wxkenshi.github.io/MangaKenshi/" class="logo-lnk">
-          <div class="logo-top">
-						<span>Manga</span>Kenshiッ
-					</div>
-          <span class="author" id="author"></span>
-        </a>
-      </>
+<body onload="bodyLoad()">
+  <section class="sec1">
+    <div class="logo">
+      <img class="logo1" src="https://svgshare.com/i/vbt.svg" alt="">
+      <img class="logo2" src="https://svgshare.com/i/vaJ.svg" alt="">
     </div>
-    <div class="nav" id="nav">
-      <a href='https://wxkenshi.github.io/MangaKenshi/' class="nav-lnk" id="nav-lnk">
-        <ion-icon name="home-outline" class="ion"></ion-icon>
-        <span class="nav-lnk-ttl">
-          Home
-        </span>
-      </a>
-      <a href='https://github.com/WXKENSHI' target='_blank' class="nav-lnk" id="nav-lnk">
-        <ion-icon name="logo-github" class="ion"></ion-icon>
-        <span class="nav-lnk-ttl">
-          Github
-        </span>
-      </a>
-      <a href='https://www.youtube.com/@WXKENSHI' target='_blank' class="nav-lnk" id="nav-lnk">
-        <ion-icon name="logo-youtube" class="ion"></ion-icon>
-        <span class="nav-lnk-ttl">
-          Youtube
-        </span>
-      </a>
+    <div class="title-container">
+      <span class="title"></span>
     </div>
-  </div>
+    <p class="desc">Tired of pesky pests interrupting your peaceful existence? Look no further! Our groundbreaking pest repellent solution will change your life and make your home a pest-free paradise.</p>
 
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <button class="btn">
+     <a class='btnlnk' href='#Our-Solution'>
+    Click here to find more out!
+     </a>
+    </button>
+  </section>
+  
+  
+  
+  <section class="sec2" id="Our-Solution">
+    <p class="title2">Our Solution!</p>
+    <h1>People all over the world complain about pests infiltrating their households and causing harm by either property damage, contagious diseases or even noise.
+      <br>
+      <br>
+      Well then, worry not. Our company offers the perfect solution, "The Pest Repellent".
+      <br>
+      <br>
+      "The Pest Repellent" is a device we specifically made to keep all kinds of pests away from your home to maintain the perfect midset and health that you most definetely desire.
+    </h1>
+  </section>
 
-  <div class="page" onclick="unnavpageclk()">
-    <div class="page-content" id="page-content">
-      
-We're no strangers to love
-You know the rules and so do I (do I)
-A full commitment's what I'm thinking of
-You wouldn't get this from any other guy
-I just wanna tell you how I'm feeling
-Gotta make you understand
-Never gonna give you up
-Never gonna let you down
-Never gonna run around and desert you
-Never gonna make you cry
-Never gonna say goodbye
-Never gonna tell a lie and hurt you
-We've known each other for so long
-Your heart's been aching, but you're too shy to say it (say it)
-Inside, we both know what's been going on (going on)
-We know the game and we're gonna play it
-And if you ask me how I'm feeling
-Don't tell me you're too blind to see
-Never gonna give you up
-Never gonna let you down
-Never gonna run around and desert you
-Never gonna make you cry
-Never gonna say goodbye
-Never gonna tell a lie and hurt you
-Never gonna give you up
-Never gonna let you down
-Never gonna run around and desert you
-Never gonna make you cry
-Never gonna say goodbye
-Never gonna tell a lie and hurt you
-We've known each other for so long
-Your heart's been aching, but you're too shy to say it (to say it)
-Inside, we both know what's been going on (going on)
-We know the game and we're gonna play it
-I just wanna tell you how I'm feeling
-Gotta make you understand
-Never gonna give you up
-Never gonna let you down
-Never gonna run around and desert you
-Never gonna make you cry
-Never gonna say goodbye
-Never gonna tell a lie and hurt you
-Never gonna give you up
-Never gonna let you down
-Never gonna run around and desert you
-Never gonna make you cry
-Never gonna say goodbye
-Never gonna tell a lie and hurt you
-Never gonna give you up
-Never gonna let you down
-Never gonna run around and desert you
-Never gonna make you cry
-Never gonna say goodbye
-Never gonna tell a lie and hurt you
+  <section class="sec3">
+    <div class="app">
+      <p class="title2">What makes us stand out?</p>
+      <h1 class="h1-3">We surely are aware that other companies and competitors have begun producing similar products,that's why we strive to deliver the best products for the customers to use.
+      <br>
+      <br>
+      <ul>
+        <li>Our device is extremely lightweight.</li>
+        <li>Our device doesn't harm the environment whatsoever.</li>
+        <li>Our device is user friendly/easy to use</li>
+        <li>Our device is cost efficient </li>
+        <li>Our device doesn't let pests in to begin with</li>
+        <li>Our device can be controlled using our app.</li>
+      </ul>
+      </h1>
     </div>
-  </div>
+  </section>
 
-
+  <section class="sec4">
+    <span class="title">
+      Pest Repellent <br>
+      <span style="font-size: 2vw;">
+        (THE APP)
+      </span>
+    </span>
+    <h1>
+      Our App provides a simple and easy way for users to control the device(turn it on/off) and change its sound frequency for different pests. <br>
+      Our app even has a feedback section where you can ask/respond to questions or even report bugs and suggest new features. <br>
+      So what are you waiting for? take the step now!
+    </h1>
+    <img src="https://i.ibb.co/Nr1Lfmx/rat-mouse-no-rat-no-mouse-silhouette-symbol-warning-sign-in-a-red-circle-sign-for-insecticides-isola.png" style="width: 20vw;">
+  </section>
+  
+  
 </body>
+<style>
+  h1 
+  {
+    margin-inline: 10vw;
+    font-size: 2.5vw;
+    font-family: 'Tilt Neon', cursive;
+  }
+  .h1-3
+  {
+    margin-inline: 0vw;
+    width: 60vw;
+    font-size: 2.5vw;
+    font-family: 'Tilt Neon', cursive;
+  }
+  .typed-cursor{
+    font-size: 5em;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+  .logo 
+  {
+    margin-top: 7vh;
+  }
+  .logo1 
+  {
+    filter: contrast(0%);
+    filter: invert(200%);
+    width: 25vw;
+    margin-left: -5vw;
+    margin-top: -3vh;
+    position: absolute;
+  }
+  .logo2 
+  {
+    width: 15vw;
+    margin-top: -2vh;
+  }
+  body 
+  {
+    background: #fafaf0;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+  html 
+  {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    scroll-behavior: smooth;
+  }
+  section 
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  .sec1 
+  {
+    background: #ffca3a;
+  }
+  .sec2 
+  {
+    background: #f1e8cf;
+  }
+  .sec3 
+  {
+    background: #fff;
+    background: url(https://static.vecteezy.com/system/resources/previews/002/474/344/original/announce-advertisement-poster-background-free-vector.jpg) no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    align-items: start;
+    margin-left: 3vw;
+  }
+  .sec4 
+  {
+    background: #f8931f;
+    padding-top: 15vh;
+  }
+  .app 
+  {
+    text-align: left;
+    align-items: start;
+    justify-content: start;
+  }
+  .title 
+  {
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Oi', cursive;
+  }
+  .title2 
+  {
+    font-size: 3em;
+    font-family: 'Oi', cursive;
+  }
+  .desc 
+  {
+    font-size: 20px;
+    font-weight: bolder;
+    width: 40vw;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10vh;
+  }
+  .btn 
+  {
+    background-color: #000000;
+    color: #ffca3a;
+    height: 7vh;
+    width: 20vw;
+    font-size: 2vh;
+    border-radius: 3px;
+    box-shadow: none;
+    outline: none;
+    border: none;
+  }
+  .btnlnk
+  {
+    background-color: #000000;
+    color: #ffca3a;
+    border-radius: 3px;
+    box-shadow: none;
+    outline: none;
+    border: none;
+  }
+</style>
+<script>
+  function bodyLoad()
+  {
+    var typingEffect = new Typed(".title",
+    {
+      strings : ["Pest Repellent!","Pest Repellent!"],
+      loop : true,
+      typeSpeed : 100,
+      backSpeed : 80 ,
+      backDelay : 1500,
+    })
+  };
+</script>
 </html>
